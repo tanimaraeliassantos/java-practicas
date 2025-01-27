@@ -9,18 +9,20 @@ public class TarjetaBancaria {
 	private int mes;
 	private int cvv;
 	private Banco banco;
+	private String titularTarjeta;
 	
 	public TarjetaBancaria() {
 		super();
 	}
 
-	public TarjetaBancaria(long numero, int year, int mes, int cvv, Banco banco) {
+	public TarjetaBancaria(long numero, int year, int mes, int cvv, Banco banco, String titularTarjeta) {
 		super();
 		this.numero = numero;
 		this.year = year;
 		this.mes = mes;
 		this.cvv = cvv;
 		this.banco = banco;
+		this.titularTarjeta = titularTarjeta;
 	}
 
 	public long getNumero() {
@@ -62,6 +64,14 @@ public class TarjetaBancaria {
 	public void setBanco(Banco banco) {
 		this.banco = banco;
 	}
+	
+	public String getTitularTarjeta() {
+		return titularTarjeta;
+	}
+
+	public void setTitularTarjeta(String titularTarjeta) {
+		this.titularTarjeta = titularTarjeta;
+	}
 
 	@Override
 	public int hashCode() {
@@ -81,8 +91,12 @@ public class TarjetaBancaria {
 	@Override
 	public String toString() {
 		return "TarjetaBancaria [numero=" + numero + ", year=" + year + ", mes=" + mes + ", cvv=" + cvv + ", banco="
-				+ banco + "]";
+				+ banco + ", titularTarjeta=" + titularTarjeta + "]";
 	}
+
+	
+
+
 	
 	
 	
