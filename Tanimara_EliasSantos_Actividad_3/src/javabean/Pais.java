@@ -3,12 +3,12 @@ package javabean;
 import java.util.Objects;
 
 public class Pais {
-	private int codigo;
+	private int codigoPais;
 	private String nombre;
 	
 	public Pais(int codigo, String nombre) {
 		super();
-		this.codigo = codigo;
+		this.codigoPais = codigo;
 		this.nombre = nombre;
 	}
 
@@ -17,11 +17,11 @@ public class Pais {
 	}
 
 	public int getCodigo() {
-		return codigo;
+		return codigoPais;
 	}
 
 	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+		this.codigoPais = codigo;
 	}
 
 	public String getNombre() {
@@ -34,7 +34,7 @@ public class Pais {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(codigo);
+		return Objects.hash(codigoPais);
 	}
 
 	@Override
@@ -44,12 +44,12 @@ public class Pais {
 		if (!(obj instanceof Pais))
 			return false;
 		Pais other = (Pais) obj;
-		return codigo == other.codigo;
+		return codigoPais == other.codigoPais;
 	}
 
 	@Override
 	public String toString() {
-		return "Pais [codigo=" + codigo + ", nombre=" + nombre + "]";
+		return "Pais [codigo=" + codigoPais + ", nombre=" + nombre + "]";
 	}
 	
 	
