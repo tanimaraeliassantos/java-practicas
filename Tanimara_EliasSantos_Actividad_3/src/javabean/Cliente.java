@@ -4,12 +4,13 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Cliente {
+	protected DireccionCliente direccion;
+
 	
 	private String idCliente;
 	private String nombre;
 	private String email;
 	private LocalDate createdAt;
-	private DireccionCliente direccion;
 	private TarjetaBancaria tarjeta;
 	
 	public Cliente(String idCliente, String nombre, String email, LocalDate createdAt, DireccionCliente direccion,
@@ -92,9 +93,11 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [idCliente=" + idCliente + ", nombre=" + nombre + ", email=" + email + ", createdAt="
-				+ createdAt + ", direccion=" + direccion + ", tarjeta=" + tarjeta + "]";
+		return "Cliente [direccion=" + direccion + ", idCliente=" + idCliente + ", nombre=" + nombre + ", email="
+				+ email + ", createdAt=" + createdAt + ", tarjeta=" + tarjeta + "]";
 	}
+
+	
 	
 	
 	
