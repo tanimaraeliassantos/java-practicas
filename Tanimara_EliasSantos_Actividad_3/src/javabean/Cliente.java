@@ -9,7 +9,7 @@ public class Cliente {
 	private String nombre;
 	private String email;
 	private LocalDate createdAt;
-	protected DireccionCliente direccion;
+	private DireccionCliente direccion;
 	private TarjetaBancaria tarjeta;
 	
 	public Cliente(String idCliente, String nombre, String email, LocalDate createdAt, DireccionCliente direccion,

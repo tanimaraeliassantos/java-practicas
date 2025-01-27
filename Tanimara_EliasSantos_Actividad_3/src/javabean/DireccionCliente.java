@@ -2,7 +2,7 @@ package javabean;
 
 public class DireccionCliente extends Cliente {
 	
-	private DireccionCliente direccion;
+	private String calle;
 	private String localidad;
 	private String provincia;
 	private Pais pais;
@@ -11,20 +11,20 @@ public class DireccionCliente extends Cliente {
 		super();
 	}
 
-	public DireccionCliente(DireccionCliente direccion, String localidad, String provincia, Pais pais) {
+	public DireccionCliente(String calle, String localidad, String provincia, Pais pais) {
 		super();
-		this.direccion = direccion;
+		this.calle = calle;
 		this.localidad = localidad;
 		this.provincia = provincia;
 		this.pais = pais;
 	}
 
-	public DireccionCliente getDireccion() {
-		return direccion;
+	public String getCalle() {
+		return calle;
 	}
 
-	public void setDireccion(DireccionCliente direccion) {
-		this.direccion = direccion;
+	public void setCalle(String calle) {
+		this.calle = calle;
 	}
 
 	public String getLocalidad() {
@@ -49,6 +49,12 @@ public class DireccionCliente extends Cliente {
 
 	public void setPais(Pais pais) {
 		this.pais = pais;
+	}
+
+	@Override
+	public String toString() {
+		return "DireccionCliente [calle=" + calle + ", localidad=" + localidad + ", provincia=" + provincia + ", pais="
+				+ pais + "]";
 	}
 	
 	
