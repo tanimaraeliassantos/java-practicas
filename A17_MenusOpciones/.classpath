@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/tanimaraes/Documents/DAW - UNIR/Programación/Programas/lombok.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
